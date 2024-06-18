@@ -10,7 +10,7 @@
 </head>
     
 <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs>
+    <a-scene embedded arjs vr-mode-ui="enabled: false">
         <a-marker preset="hiro">
             <!-- モデルの読み込みと設置 -->
             <a-entity gltf-model="url(./assets/asset.gltf)" position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0" custom-points="size: 1" material="shader: flat; side: double;"></a-entity>
