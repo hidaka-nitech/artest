@@ -5,11 +5,12 @@
     <title>0803_名工大公開講座</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="test.js"></script>
+    <script src="pointsize.js"></script>
 </head>
     
 <body>
     <a-scene>
-        <a-entity gltf-model="url(./assets/point_cloud_with_colors.gltf)" position="0 0 -3" scale="2 2 2" material="shader: flat; side: double;"></a-entity>
+        <a-entity gltf-model="url(./assets/point_cloud_with_colors.gltf)" position="0 0 -3" scale="2 2 2" custom-points="size: 0.05" material="shader: flat; side: double;"></a-entity>
         <a-camera position="0 0 3"><!-- カメラ位置 xが横，yが縦，zが奥行き方向 -->
             <!-- <a-cursor></a-cursor> -->
         </a-camera>
