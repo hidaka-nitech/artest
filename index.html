@@ -11,12 +11,13 @@
     <script src="pointsize.js"></script>
 </head>
     
-<body>
+<body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
         <a-marker preset="hiro">
         
         <a-entity gltf-model="url(./assets/piers.gltf)" position="0 0 0" scale="1 1 1" custom-points="size: 1" material="shader: flat; side: double;"></a-entity>
-        
+
+        </a-marker>
         <a-camera-static></a-camera-static>
     </a-scene>
 </body>
