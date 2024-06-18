@@ -3,10 +3,8 @@
     
 <head>
     <title>0803_名工大公開講座</title>
-    
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    
     <script src="test.js"></script>
     <script src="pointsize.js"></script>
 </head>
@@ -14,12 +12,13 @@
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-        
-        <a-entity gltf-model="url(./assets/piers.gltf)" position="0 0 0" scale="1 1 1" custom-points="size: 1" material="shader: flat; side: double;"></a-entity>
-
+            <!-- モデルの読み込みと設置 -->
+            <a-entity gltf-model="url(./assets/piers.gltf)" position="0 0 0" scale="0.1 0.1 0.1" custom-points="size: 1" material="shader: flat; side: double;"></a-entity>
         </a-marker>
+        
+        <!-- 静止カメラの設置 -->
         <a-camera-static></a-camera-static>
     </a-scene>
 </body>
-
+    
 </html>
