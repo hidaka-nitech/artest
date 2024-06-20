@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             Btn.addEventListener('click', () => {
             model1.setAttribute('visible', false);
+            Btn.textContent = 'Show Model';
             });
         });
