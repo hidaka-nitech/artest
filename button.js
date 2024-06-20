@@ -7,4 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
             model1.setAttribute('visible', false);
             Btn.textContent = 'Show Model';
             });
+
+            const checkOrientation = () => {
+        if (window.innerHeight > window.innerWidth) {
+            document.getElementById('orientation-warning').style.display = 'flex';
+        } else {
+            document.getElementById('orientation-warning').style.display = 'none';
+        }
+    };
+
+    window.addEventListener('resize', checkOrientation);
+    checkOrientation();
 });
