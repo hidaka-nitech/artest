@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
             model1.setAttribute('visible', false);
             Btn.textContent = 'Show Model';
             });
-        });
+});
