@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
             const model1 = document.getElementById('model1');
             const model2 = document.getElementById('model2');
-            const Btn = document.getElementById('');
+            const Btn = document.getElementById('center');
 
             toggleModelBtn.addEventListener('click', () => {
             model1.setAttribute('visible', false);
